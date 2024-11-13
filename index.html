@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Infinity - Web3 Solutions</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/" style="display: flex; align-items: center; text-decoration: none; gap: 1rem;">
+                    <img src="images/logo.png" 
+                         alt="Nebula Infinity"
+                         loading="lazy">
+                    <span class="logo-text">NEBULA INFINITY</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active" data-ja="ホーム" data-en="Home">ホーム</a>
+                <a href="#services" data-ja="事業内容" data-en="Services">事業内容</a>
+                <a href="#about" data-ja="会社概要" data-en="About">会社概要</a>
+                <a href="#contact" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a>
+            </div>
+            <button class="lang-switch" onclick="toggleLanguage()">EN</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1 data-ja="Web3.0の未来を創造する" data-en="Creating the Web3.0 Future">Web3.0の未来を創造する</h1>
+            <p data-ja="ブロックチェーンテクノロジーで、よりよき世界へ" data-en="Towards an open world with decentralized technology">
+               ブロックチェーンテクノロジーで、よりよき世界へ
+            </p>
+        </section>
+
+        <section id="services" class="services">
+            <h2 data-ja="サービス" data-en="Our Services">サービス</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3 data-ja="スマートコントラクト<br>設計・開発" data-en="Smart Contract<br>Design & Development">
+                        スマートコントラクト<br>設計・開発
+                    </h3>
+                    <p data-ja="次世代ビジネスを支えるスマートコントラクトを設計・開発。<br>安全性と効率を重視し、最適なブロックチェーンソリューションを提供し、ニーズにフィトするコントラクトをカスタマイズします。"
+                       data-en="Design and develop smart contracts to power the next generation of businesses. <br>Prioritizing security and efficiency, we deliver the optimal blockchain solutions, tailored for your needs.">
+                       次世代ビジネスを支えるスマートコントラクトを設計・開発。<br>安全性と効率を重視し、最適なブロックチェーンソリューションを提供し、ニーズにフィトするコントラクトをカスタマイズします。
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3 data-ja="Web3.0コンテンツ<br>企画・開発・リリース" data-en="Web3.0 Contents<br>Strategy & Development">
+                        Web3.0コンテンツ<br>企画・開発・リリース
+                    </h3>
+                    <p data-ja="NFTやDAppなどのコンテンツの企画から開発、リリースまで一貫サポートし、ユーザーに革新的な体験を提供します。<br>アイデアを現実に！<br>Web3.0の可能性を引き出します。" 
+                       data-en="Bringing your ideas to life. <br>We provide end-to-end support for NFT/DApp planning, development, and release, delivering an innovative experience for users and unlocking the potential of Web3.0.">
+                       NFTやDAppなどのコンテンツの企画から開発、リリースまで一貫サポートし、ユーザーに革新的な体験を提供します。<br>アイデアを現実に！<br>Web3.0の可能性���引き出します。
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3 data-ja="Web3.0<br>コンサルティング" data-en="Web3.0<br>Consulting">
+                        Web3.0<br>コンサルティング
+                    </h3>
+                    <p data-ja="Web3.0の戦略立案から導入実現まで、最適なソリューションを提案し、新しいデジタル時代のビジネス成功をサポートします。<br>Web3.0型プロジェクトマネージメント支援も提供します。" 
+                       data-en="From Web3.0 strategy planning to implementation, we provide optimal solutions to support your business success in the new digital era. <br>We also offer project management support for Web3.0 projects.">
+                       Web3.0の戦略立案から導入実現まで、最適なソリューションを提案し、新しいデジタル時代のビジネス成功をサポートします。<br>Web3.0型プロジェクトマネージメント支援も提供します。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 data-ja="About Us" data-en="About Us">About Us</h2>
+            <div class="about-content">
+                <p data-ja="Nebula Infinityは「Web3.0を身近に」をモットーとして、ブロックチェーンテクノロジーに特化したWeb3.0のコンテンツ開発会社です。スマートコントラクトの設計・開発、DAppの企画・リリース、Web3.0コンサルティングを通じて、未来のデジタルエコシステムを創造します。
+                <br>革新的で安全なソリューションを提供し、企業が新しい時代の可能性を最大限に引き出せるようサポートします。
+                <br>Web3.0のパートナーとして、持続可能な未来の実現に向けて共に歩みながら、よりよき世界を作り上げましょう。" 
+                   data-en="Nebula Infinity is a Web3.0 content development company specializing in blockchain technology, driven by the motto “Bringing Web3.0 Closer.” Through smart contract design, DApp planning and release, and Web3.0 consulting, we are building the digital ecosystem of the future. 
+                   <br>Our innovative and secure solutions empower businesses to fully harness the potential of this new era. As a dedicated Web3.0 partner, we work together toward a sustainable future, crafting a better world with each step forward.">
+                   Nebula Infinityは「Web3.0を身近に」をモ��トーとして、ブロックチェーンテクノロジーに特化したWeb3.0のコンテンツ開発会社です。スマートコントラクトの設計・開発、DAppの企画・リリース、Web3.0コンサルティングを通じて、未来のデジタルエコシステムを創造します。
+                   <br>革新的で安全なソリューションを提供し、企業が新しい時代の可能性を最大限に引き出せるようサポートします。
+                   <br>Web3.0のパートナーとして、持続可能な未来の実現に向けて共に歩みながら、よりよき世界を作り上げましょう。
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 data-ja="連絡先" data-en="Contact Us">連絡先</h2>
+            <div class="contact-links">
+                <a href="mailto:info@nebulainfinity.com" 
+                   class="contact-button email-button">
+                    <i class="fas fa-envelope"></i>
+                    <span data-ja="メールで問い合わせる" data-en="Contact via Email">
+                        メールで問い合わせる
+                    </span>
+                </a>
+                <a href="https://x.com/N_I_COM" 
+                   target="_blank" 
+                   class="contact-button twitter-button">
+                    <i class="fab fa-x-twitter"></i>
+                    <span data-ja="X (Twitter) でフォロー" data-en="Follow on X (Twitter)">
+                        X (Twitter) でフォロー
+                    </span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Nebula Infinity. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

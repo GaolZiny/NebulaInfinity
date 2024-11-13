@@ -1,0 +1,291 @@
+:root {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --accent-color: #2DD4BF;
+    --secondary-color: #1F2937;
+    --nav-height: 80px;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+.navbar {
+    height: var(--nav-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.3));
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.logo img:hover {
+    filter: drop-shadow(0 0 12px rgba(45, 212, 191, 0.5));
+    transform: scale(1.05);
+}
+
+.logo-text {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.logo:hover .logo-text {
+    color: var(--accent-color);
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 2.5rem;
+    font-size: 1rem;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    color: var(--accent-color);
+}
+
+.lang-switch {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent-color);
+    background: transparent;
+    color: var(--accent-color);
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.hero {
+    min-height: calc(100vh - var(--nav-height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1,
+.hero p {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: var(--accent-color);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    opacity: 0.8;
+    max-width: 600px;
+}
+
+.services {
+    padding: 6rem 2rem;
+    background: var(--secondary-color);
+}
+
+.services h2, .about h2, .contact h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--accent-color);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.service-card {
+    background: var(--bg-color);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    min-height: 3em;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.4;
+    margin-top: -0.8rem;
+}
+
+.service-card p {
+    opacity: 0.8;
+    font-size: 1.1rem;
+    margin-top: 0;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.about {
+    padding: 6rem 2rem;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    line-height: 1.8;
+}
+
+.contact {
+    padding: 6rem 2rem;
+    background: var(--secondary-color);
+}
+
+.contact-links {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    min-width: 300px;
+    justify-content: center;
+}
+
+.email-button {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    box-shadow: 0 4px 6px rgba(45, 212, 191, 0.1);
+}
+
+.email-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(45, 212, 191, 0.2);
+}
+
+.twitter-button {
+    background: #1DA1F2;  /* Twitter蓝色 */
+    color: white;
+    box-shadow: 0 4px 6px rgba(29, 161, 242, 0.1);
+}
+
+.twitter-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(29, 161, 242, 0.2);
+}
+
+.contact-button i {
+    font-size: 1.3rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form {
+        padding: 0 1rem;
+    }
+    
+    .contact-button {
+        min-width: 250px;
+        padding: 1rem 2rem;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
